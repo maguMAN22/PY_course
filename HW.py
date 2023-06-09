@@ -143,6 +143,23 @@ def task20():
                 summa = summa + letters.get(key)
     print(summa)
 
+def task26():
+    numA = int(input())
+    numB = int(input())
+    def exp(numA, numB):
+        if numB == 1: return numA 
+        return numA * exp(numA, numB - 1)
+    print(exp(numA, numB))
+
+def task28():
+    numA = int(input())
+    numB = int(input())
+    def sum (numA, numB):
+        if numB == 0: return numA
+        return 1 + sum(numA, numB - 1)
+    print(sum(numA, numB))
+
+        
 
 
    
